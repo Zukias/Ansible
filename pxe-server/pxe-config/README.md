@@ -19,7 +19,7 @@ Roles
 Role Variables
 --------------
 
-Settable variable are in /pxe-server/pxe-dhcp/defaults/main.yml.
+Settable variable are in `/pxe-server/pxe-dhcp/defaults/main.yml`.
 
 Variables in that file allow you to custom the basic dhcpd.conf file with your network parameter.
 
