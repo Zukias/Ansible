@@ -25,13 +25,13 @@ Variables in that file allow you to custom the basic dhcpd.conf file with your n
 
 (Variables utilisation exemples) :
 
-dns_search: exemple.com
-dns_server: your dns server
-network_ip: 192.168.0.0
-network_netmask: 255.255.255.0
-range_min: 192.168.0.50
-range_max: 192.168.0.150
-network_gateway: 102.168.0.1
+- dns_search: exemple.com
+- dns_server: your dns server
+- network_ip: 192.168.0.0
+- network_netmask: 255.255.255.0
+- range_min: 192.168.0.50
+- range_max: 192.168.0.150
+- network_gateway: 102.168.0.1
 
 Author Information
 ------------------
