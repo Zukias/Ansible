@@ -1,0 +1,9 @@
+---
+# defaults file for pxe-dhcp
+dns_search: 
+dns_server:
+network_ip: 
+network_netmask:
+range_min:
+range_max:
+network_gateway:

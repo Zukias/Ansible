@@ -1,0 +1,15 @@
+---
+# tasks file for pxe-config
+- name: Enable TFTP Server
+  lineinfile:
+    dest: /etc/default/tftpd-hpa
+    line: '{ item }'
+  with_items:
+    - line: 'RUN_DAEMON="yes"'
+    - line: 'OPTIONS="-l -s /var/lib/tftpboot"'
+
+- name: Add TFTP to inetd.conf
+  lineinfile:
+    dest: /etc/inetd.conf
+    line: 'tftp    dgram   udp    wait    root    /usr/sbin/in.tftpd /usr/sbin/in.tftpd -s /var/lib/tftpboot'
+

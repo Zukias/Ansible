@@ -1,0 +1,6 @@
+---
+- hosts: pxeservers
+  roles:
+          - pxe-dependencies
+          - pxe-dhcp
+          - pxe-config

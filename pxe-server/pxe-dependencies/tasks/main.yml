@@ -1,0 +1,11 @@
+---
+# tasks file for pxe-dependencies
+- name: Update server
+  apt: name=* state=latest
+
+- name: Install dependencies for PXE Server
+  apt: name={ item } state=present
+  with_items:
+        - apache2
+        - tftpd-hpa
+        - inetutils-inetd
